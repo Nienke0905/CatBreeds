@@ -29,6 +29,20 @@ struct CatBreedDetailsView: View {
                 }
                 .padding(20)
             }
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        viewModel.toggleIsFavorited()
+                    } label: {
+                        Image(systemName: viewModel.isFavorited ? "heart.fill" : "heart")
+                            .imageScale(.large)
+                    }
+
+                }
+            }
+            .onAppear {
+                viewModel.loadIsFavorited()
+            }
         }
     }
 }
@@ -40,6 +54,7 @@ private extension Image {
             .scaledToFit()
             .cornerRadius(10)
             .padding(.horizontal, 20)
+            .foregroundColor(.gray)
    }
 }
 

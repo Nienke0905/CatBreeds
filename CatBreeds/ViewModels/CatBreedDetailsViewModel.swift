@@ -4,9 +4,14 @@ import SwiftUI
 class CatBreedDetailsViewModel: ObservableObject {
     @Published var breed: CatBreed
     @Published var image: UIImage?
+    @Published var isFavorited: Bool = false
+
+    private let favoritesManager: FavoritesManager
 
     init(breed: CatBreed) {
         self.breed = breed
+        self.favoritesManager = FavoritesManager()
+        self.isFavorited = favoritesManager.getFavorites().contains(where: { $0.id == breed.id })
         loadImage()
     }
 
@@ -18,7 +23,11 @@ class CatBreedDetailsViewModel: ObservableObject {
         return components.url
     }
 
-    func loadImage() {
+    func loadIsFavorited() {
+        isFavorited = favoritesManager.getFavorites().contains(where: { $0.id == breed.id })
+    }
+
+    private func loadImage() {
         guard let imageID = breed.referenceImageID else { return }
         if let cachedImage = ImageCache.shared.get(forKey: imageID) {
             self.image = cachedImage
@@ -41,5 +50,14 @@ class CatBreedDetailsViewModel: ObservableObject {
             }
         }
         task.resume()
+    }
+
+    func toggleIsFavorited() {
+        if isFavorited {
+            favoritesManager.removeFavorite(breed)
+        } else {
+            favoritesManager.addFavorite(breed)
+        }
+        isFavorited = favoritesManager.getFavorites().contains(where: { $0.id == breed.id })
     }
 }

@@ -10,7 +10,6 @@ struct CatBreedRowView: View {
                     if image == UIImage(named: "cat") {
                         Image("cat")
                             .myImageModifier()
-                            .foregroundColor(.gray)
 
                     } else {
                         Image(uiImage: image)
@@ -27,7 +26,6 @@ struct CatBreedRowView: View {
             } else {
                 Image("cat")
                     .myImageModifier()
-                    .foregroundColor(.gray)
             }
 
             VStack(alignment: .leading) {
@@ -49,6 +47,7 @@ private extension Image {
             .frame(width: 100, height: 100)
             .clipped()
             .cornerRadius(10)
+            .foregroundColor(.gray)
    }
 }
 

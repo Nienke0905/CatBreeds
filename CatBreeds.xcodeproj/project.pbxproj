@@ -22,6 +22,9 @@
 		A1BF49002A682F0500270DC9 /* CatBreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */; };
 		A1BF49022A682F7A00270DC9 /* CatBreedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49012A682F7A00270DC9 /* CatBreedDetailsView.swift */; };
 		A1BF49042A6835C600270DC9 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49032A6835C600270DC9 /* OverviewView.swift */; };
+		A1BF49062A6836B900270DC9 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49052A6836B900270DC9 /* FavoritesManager.swift */; };
+		A1BF49082A6836DB00270DC9 /* FavoriteBreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49072A6836DB00270DC9 /* FavoriteBreedsViewModel.swift */; };
+		A1BF490A2A68372800270DC9 /* FavoriteBreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49092A68372800270DC9 /* FavoriteBreedsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailsViewModel.swift; sourceTree = "<group>"; };
 		A1BF49012A682F7A00270DC9 /* CatBreedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailsView.swift; sourceTree = "<group>"; };
 		A1BF49032A6835C600270DC9 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		A1BF49052A6836B900270DC9 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		A1BF49072A6836DB00270DC9 /* FavoriteBreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBreedsViewModel.swift; sourceTree = "<group>"; };
+		A1BF49092A68372800270DC9 /* FavoriteBreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBreedsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 				A1BF48FD2A682CE700270DC9 /* CatBreedRowView.swift */,
 				A1BF49012A682F7A00270DC9 /* CatBreedDetailsView.swift */,
 				A1BF49032A6835C600270DC9 /* OverviewView.swift */,
+				A1BF49092A68372800270DC9 /* FavoriteBreedsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */,
 				A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */,
 				A1BF48FB2A682CAB00270DC9 /* CatBreedRowViewModel.swift */,
+				A1BF49072A6836DB00270DC9 /* FavoriteBreedsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				A1BF48F92A682C7B00270DC9 /* ImageCashe.swift */,
+				A1BF49052A6836B900270DC9 /* FavoritesManager.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -318,11 +327,14 @@
 				A1BF49022A682F7A00270DC9 /* CatBreedDetailsView.swift in Sources */,
 				A1BF49042A6835C600270DC9 /* OverviewView.swift in Sources */,
 				A1BF48FE2A682CE700270DC9 /* CatBreedRowView.swift in Sources */,
+				A1BF49082A6836DB00270DC9 /* FavoriteBreedsViewModel.swift in Sources */,
+				A1BF49062A6836B900270DC9 /* FavoritesManager.swift in Sources */,
 				A1BF48FA2A682C7B00270DC9 /* ImageCashe.swift in Sources */,
 				A1BF48CA2A68288800270DC9 /* CatBreedsListView.swift in Sources */,
 				A1BF49002A682F0500270DC9 /* CatBreedDetailsViewModel.swift in Sources */,
 				A1BF48C82A68288800270DC9 /* CatBreedsApp.swift in Sources */,
 				A1BF48F72A682A7000270DC9 /* CatBreed.swift in Sources */,
+				A1BF490A2A68372800270DC9 /* FavoriteBreedsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

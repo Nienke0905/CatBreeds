@@ -1,10 +1,3 @@
-//
-//  OverviewView.swift
-//  CatBreeds
-//
-//  Created by Nienke Westdijk on 19.07.23.
-//
-
 import SwiftUI
 
 struct OverviewView: View {
@@ -14,7 +7,7 @@ struct OverviewView: View {
                 .tabItem{
                     Label("Home", systemImage: "house")
                 }
-            CatBreedsListView()
+            FavoriteBreedsView()
                 .tabItem{
                     Label("Favorites", systemImage: "heart")
                 }
