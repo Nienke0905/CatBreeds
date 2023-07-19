@@ -7,10 +7,7 @@ struct CatBreedsListView: View {
         NavigationStack {
             List {
                 ForEach(viewModel.catBreeds, id: \.id) { breed in
-                    VStack {
-                        Text(breed.name)
-                        Text(breed.description)
-                    }
+                    CatBreedRowView(viewModel: CatBreedRowViewModel(breed: breed))
                     .listRowSeparator(.hidden)
                 }
             }
