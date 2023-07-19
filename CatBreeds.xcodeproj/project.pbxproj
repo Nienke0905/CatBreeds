@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A1BF48C82A68288800270DC9 /* CatBreedsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48C72A68288800270DC9 /* CatBreedsApp.swift */; };
-		A1BF48CA2A68288800270DC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48C92A68288800270DC9 /* ContentView.swift */; };
+		A1BF48CA2A68288800270DC9 /* CatBreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48C92A68288800270DC9 /* CatBreedsListView.swift */; };
 		A1BF48CC2A68288A00270DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BF48CB2A68288A00270DC9 /* Assets.xcassets */; };
 		A1BF48CF2A68288A00270DC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BF48CE2A68288A00270DC9 /* Preview Assets.xcassets */; };
 		A1BF48D92A68288A00270DC9 /* CatBreedsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48D82A68288A00270DC9 /* CatBreedsTests.swift */; };
 		A1BF48E32A68288A00270DC9 /* CatBreedsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48E22A68288A00270DC9 /* CatBreedsUITests.swift */; };
 		A1BF48E52A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48E42A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift */; };
+		A1BF48F52A682A1F00270DC9 /* CatBreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */; };
+		A1BF48F72A682A7000270DC9 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48F62A682A7000270DC9 /* CatBreed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		A1BF48C42A68288800270DC9 /* CatBreeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBreeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BF48C72A68288800270DC9 /* CatBreedsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsApp.swift; sourceTree = "<group>"; };
-		A1BF48C92A68288800270DC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1BF48C92A68288800270DC9 /* CatBreedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsListView.swift; sourceTree = "<group>"; };
 		A1BF48CB2A68288A00270DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1BF48CE2A68288A00270DC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1BF48D42A68288A00270DC9 /* CatBreedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatBreedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		A1BF48DE2A68288A00270DC9 /* CatBreedsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatBreedsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BF48E22A68288A00270DC9 /* CatBreedsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsUITests.swift; sourceTree = "<group>"; };
 		A1BF48E42A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsListViewModel.swift; sourceTree = "<group>"; };
+		A1BF48F62A682A7000270DC9 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		A1BF48C62A68288800270DC9 /* CatBreeds */ = {
 			isa = PBXGroup;
 			children = (
+				A1BF48F32A68297100270DC9 /* Models */,
+				A1BF48F22A68296800270DC9 /* ViewModels */,
+				A1BF48F12A68295E00270DC9 /* Views */,
 				A1BF48C72A68288800270DC9 /* CatBreedsApp.swift */,
-				A1BF48C92A68288800270DC9 /* ContentView.swift */,
 				A1BF48CB2A68288A00270DC9 /* Assets.xcassets */,
 				A1BF48CD2A68288A00270DC9 /* Preview Content */,
 			);
@@ -125,6 +131,30 @@
 				A1BF48E42A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift */,
 			);
 			path = CatBreedsUITests;
+			sourceTree = "<group>";
+		};
+		A1BF48F12A68295E00270DC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1BF48C92A68288800270DC9 /* CatBreedsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1BF48F22A68296800270DC9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A1BF48F32A68297100270DC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1BF48F62A682A7000270DC9 /* CatBreed.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BF48CA2A68288800270DC9 /* ContentView.swift in Sources */,
+				A1BF48F52A682A1F00270DC9 /* CatBreedsListViewModel.swift in Sources */,
+				A1BF48CA2A68288800270DC9 /* CatBreedsListView.swift in Sources */,
 				A1BF48C82A68288800270DC9 /* CatBreedsApp.swift in Sources */,
+				A1BF48F72A682A7000270DC9 /* CatBreed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
