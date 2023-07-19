@@ -21,6 +21,7 @@
 		A1BF48FE2A682CE700270DC9 /* CatBreedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48FD2A682CE700270DC9 /* CatBreedRowView.swift */; };
 		A1BF49002A682F0500270DC9 /* CatBreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */; };
 		A1BF49022A682F7A00270DC9 /* CatBreedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49012A682F7A00270DC9 /* CatBreedDetailsView.swift */; };
+		A1BF49042A6835C600270DC9 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49032A6835C600270DC9 /* OverviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A1BF48FD2A682CE700270DC9 /* CatBreedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedRowView.swift; sourceTree = "<group>"; };
 		A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailsViewModel.swift; sourceTree = "<group>"; };
 		A1BF49012A682F7A00270DC9 /* CatBreedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailsView.swift; sourceTree = "<group>"; };
+		A1BF49032A6835C600270DC9 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				A1BF48C92A68288800270DC9 /* CatBreedsListView.swift */,
 				A1BF48FD2A682CE700270DC9 /* CatBreedRowView.swift */,
 				A1BF49012A682F7A00270DC9 /* CatBreedDetailsView.swift */,
+				A1BF49032A6835C600270DC9 /* OverviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				A1BF48F52A682A1F00270DC9 /* CatBreedsListViewModel.swift in Sources */,
 				A1BF48FC2A682CAB00270DC9 /* CatBreedRowViewModel.swift in Sources */,
 				A1BF49022A682F7A00270DC9 /* CatBreedDetailsView.swift in Sources */,
+				A1BF49042A6835C600270DC9 /* OverviewView.swift in Sources */,
 				A1BF48FE2A682CE700270DC9 /* CatBreedRowView.swift in Sources */,
 				A1BF48FA2A682C7B00270DC9 /* ImageCashe.swift in Sources */,
 				A1BF48CA2A68288800270DC9 /* CatBreedsListView.swift in Sources */,
