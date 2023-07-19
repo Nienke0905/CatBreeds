@@ -1,6 +1,6 @@
 import Foundation
 
-struct CatBreed: Codable, Identifiable {
+struct CatBreed: Codable, Identifiable, Equatable {
     let id: String
     let name: String
     let temperament: String

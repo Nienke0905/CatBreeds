@@ -25,6 +25,8 @@
 		A1BF49062A6836B900270DC9 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49052A6836B900270DC9 /* FavoritesManager.swift */; };
 		A1BF49082A6836DB00270DC9 /* FavoriteBreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49072A6836DB00270DC9 /* FavoriteBreedsViewModel.swift */; };
 		A1BF490A2A68372800270DC9 /* FavoriteBreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF49092A68372800270DC9 /* FavoriteBreedsView.swift */; };
+		A1BF490C2A68529A00270DC9 /* FavoritesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF490B2A68529A00270DC9 /* FavoritesManagerTests.swift */; };
+		A1BF490E2A6852DA00270DC9 /* UserDefaultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF490D2A6852DA00270DC9 /* UserDefaultsMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		A1BF49052A6836B900270DC9 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		A1BF49072A6836DB00270DC9 /* FavoriteBreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBreedsViewModel.swift; sourceTree = "<group>"; };
 		A1BF49092A68372800270DC9 /* FavoriteBreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBreedsView.swift; sourceTree = "<group>"; };
+		A1BF490B2A68529A00270DC9 /* FavoritesManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManagerTests.swift; sourceTree = "<group>"; };
+		A1BF490D2A6852DA00270DC9 /* UserDefaultsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				A1BF48D82A68288A00270DC9 /* CatBreedsTests.swift */,
+				A1BF490B2A68529A00270DC9 /* FavoritesManagerTests.swift */,
+				A1BF490D2A6852DA00270DC9 /* UserDefaultsMock.swift */,
 			);
 			path = CatBreedsTests;
 			sourceTree = "<group>";
@@ -343,6 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BF48D92A68288A00270DC9 /* CatBreedsTests.swift in Sources */,
+				A1BF490C2A68529A00270DC9 /* FavoritesManagerTests.swift in Sources */,
+				A1BF490E2A6852DA00270DC9 /* UserDefaultsMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

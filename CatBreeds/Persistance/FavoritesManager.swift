@@ -2,9 +2,14 @@ import Foundation
 
 class FavoritesManager {
     private let userDefaultsKey = "FavoriteItems"
+    private let userDefaults: UserDefaults
+
+    init(userDefaults: UserDefaults = UserDefaults.standard) {
+        self.userDefaults = userDefaults
+    }
 
     func getFavorites() -> [CatBreed] {
-        guard let data = UserDefaults.standard.data(forKey: userDefaultsKey),
+        guard let data = userDefaults.data(forKey: userDefaultsKey),
               let savedItems = try? JSONDecoder().decode([CatBreed].self, from: data) else {
             return []
         }
@@ -23,9 +28,9 @@ class FavoritesManager {
         saveFavorites(favorites)
     }
 
-    func saveFavorites(_ breeds: [CatBreed]) {
+    private func saveFavorites(_ breeds: [CatBreed]) {
         if let encodedData = try? JSONEncoder().encode(breeds) {
-            UserDefaults.standard.set(encodedData, forKey: userDefaultsKey)
+            userDefaults.set(encodedData, forKey: userDefaultsKey)
         }
     }
 }
