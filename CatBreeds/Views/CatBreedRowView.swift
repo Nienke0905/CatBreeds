@@ -41,7 +41,7 @@ struct CatBreedRowView: View {
     }
 }
 
-extension Image {
+private extension Image {
     func myImageModifier() -> some View {
         self
             .resizable()
