@@ -22,6 +22,7 @@ final class FavoritesManagerTests: XCTestCase {
     override func tearDownWithError() throws {
         userDefaultsMock = nil
         favoritesManager = nil
+        try super.tearDownWithError()
     }
 
 

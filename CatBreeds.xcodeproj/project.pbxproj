@@ -81,13 +81,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1BF48DB2A68288A00270DC9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -105,7 +98,6 @@
 			children = (
 				A1BF48C42A68288800270DC9 /* CatBreeds.app */,
 				A1BF48D42A68288A00270DC9 /* CatBreedsTests.xctest */,
-				A1BF48DE2A68288A00270DC9 /* CatBreedsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,24 +211,6 @@
 			productReference = A1BF48D42A68288A00270DC9 /* CatBreedsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A1BF48DD2A68288A00270DC9 /* CatBreedsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1BF48EE2A68288A00270DC9 /* Build configuration list for PBXNativeTarget "CatBreedsUITests" */;
-			buildPhases = (
-				A1BF48DA2A68288A00270DC9 /* Sources */,
-				A1BF48DB2A68288A00270DC9 /* Frameworks */,
-				A1BF48DC2A68288A00270DC9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1BF48E02A68288A00270DC9 /* PBXTargetDependency */,
-			);
-			name = CatBreedsUITests;
-			productName = CatBreedsUITests;
-			productReference = A1BF48DE2A68288A00270DC9 /* CatBreedsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,10 +225,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					A1BF48D32A68288A00270DC9 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = A1BF48C32A68288800270DC9;
-					};
-					A1BF48DD2A68288A00270DC9 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = A1BF48C32A68288800270DC9;
 					};
@@ -275,7 +245,6 @@
 			targets = (
 				A1BF48C32A68288800270DC9 /* CatBreeds */,
 				A1BF48D32A68288A00270DC9 /* CatBreedsTests */,
-				A1BF48DD2A68288A00270DC9 /* CatBreedsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,13 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A1BF48D22A68288A00270DC9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1BF48DC2A68288A00270DC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,13 +298,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1BF48DA2A68288A00270DC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -350,11 +305,6 @@
 			isa = PBXTargetDependency;
 			target = A1BF48C32A68288800270DC9 /* CatBreeds */;
 			targetProxy = A1BF48D52A68288A00270DC9 /* PBXContainerItemProxy */;
-		};
-		A1BF48E02A68288A00270DC9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1BF48C32A68288800270DC9 /* CatBreeds */;
-			targetProxy = A1BF48DF2A68288A00270DC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -571,42 +521,6 @@
 			};
 			name = Release;
 		};
-		A1BF48EF2A68288A00270DC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BYU8WM4XD7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nienke.CatBreedsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatBreeds;
-			};
-			name = Debug;
-		};
-		A1BF48F02A68288A00270DC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BYU8WM4XD7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nienke.CatBreedsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatBreeds;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,15 +547,6 @@
 			buildConfigurations = (
 				A1BF48EC2A68288A00270DC9 /* Debug */,
 				A1BF48ED2A68288A00270DC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1BF48EE2A68288A00270DC9 /* Build configuration list for PBXNativeTarget "CatBreedsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1BF48EF2A68288A00270DC9 /* Debug */,
-				A1BF48F02A68288A00270DC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
