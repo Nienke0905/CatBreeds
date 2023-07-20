@@ -15,38 +15,10 @@ class FavoriteBreedsViewModel: ObservableObject {
         catBreeds = favoritesManager.getFavorites()
     }
 
-    private func imageURL(for imageID: String) -> URL? {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "cdn2.thecatapi.com"
-        components.path = "/images/\(imageID).jpg"
-        return components.url
-    }
-
-
     func loadImage(for imageID: String) {
-        if let cachedImage = ImageCache.shared.get(forKey: imageID) {
-            self.images[imageID] = cachedImage
-            return
+        ImageManager.loadImage(forID: imageID) { [weak self] image in
+            self?.images[imageID] = image
         }
-
-        guard let url = imageURL(for: imageID) else { return }
-
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            DispatchQueue.main.async {
-                if let data = data, let image = UIImage(data: data) {
-                    self.images[imageID] = image
-                    ImageCache.shared.set(image, forKey: imageID)
-                } else {
-                    if let defaultImage = UIImage(named: "cat") {
-                        self.images[imageID] = defaultImage
-                        ImageCache.shared.set(defaultImage, forKey: imageID)
-
-                    }
-                }
-            }
-        }
-        task.resume()
     }
 
     func removeFavorite(forBreed breed: CatBreed) {

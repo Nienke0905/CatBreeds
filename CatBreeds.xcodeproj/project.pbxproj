@@ -16,7 +16,7 @@
 		A1BF48E52A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48E42A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift */; };
 		A1BF48F52A682A1F00270DC9 /* CatBreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */; };
 		A1BF48F72A682A7000270DC9 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48F62A682A7000270DC9 /* CatBreed.swift */; };
-		A1BF48FA2A682C7B00270DC9 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48F92A682C7B00270DC9 /* ImageCashe.swift */; };
+		A1BF48FA2A682C7B00270DC9 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48F92A682C7B00270DC9 /* ImageManager.swift */; };
 		A1BF48FC2A682CAB00270DC9 /* CatBreedRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48FB2A682CAB00270DC9 /* CatBreedRowViewModel.swift */; };
 		A1BF48FE2A682CE700270DC9 /* CatBreedRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48FD2A682CE700270DC9 /* CatBreedRowView.swift */; };
 		A1BF49002A682F0500270DC9 /* CatBreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */; };
@@ -59,7 +59,7 @@
 		A1BF48E42A68288A00270DC9 /* CatBreedsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsListViewModel.swift; sourceTree = "<group>"; };
 		A1BF48F62A682A7000270DC9 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
-		A1BF48F92A682C7B00270DC9 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
+		A1BF48F92A682C7B00270DC9 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		A1BF48FB2A682CAB00270DC9 /* CatBreedRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedRowViewModel.swift; sourceTree = "<group>"; };
 		A1BF48FD2A682CE700270DC9 /* CatBreedRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedRowView.swift; sourceTree = "<group>"; };
 		A1BF48FF2A682F0500270DC9 /* CatBreedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		A1BF48F82A682C5D00270DC9 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
-				A1BF48F92A682C7B00270DC9 /* ImageCashe.swift */,
+				A1BF48F92A682C7B00270DC9 /* ImageManager.swift */,
 				A1BF49052A6836B900270DC9 /* FavoritesManager.swift */,
 			);
 			path = Persistance;
@@ -335,7 +335,7 @@
 				A1BF48FE2A682CE700270DC9 /* CatBreedRowView.swift in Sources */,
 				A1BF49082A6836DB00270DC9 /* FavoriteBreedsViewModel.swift in Sources */,
 				A1BF49062A6836B900270DC9 /* FavoritesManager.swift in Sources */,
-				A1BF48FA2A682C7B00270DC9 /* ImageCashe.swift in Sources */,
+				A1BF48FA2A682C7B00270DC9 /* ImageManager.swift in Sources */,
 				A1BF48CA2A68288800270DC9 /* CatBreedsListView.swift in Sources */,
 				A1BF49002A682F0500270DC9 /* CatBreedDetailsViewModel.swift in Sources */,
 				A1BF48C82A68288800270DC9 /* CatBreedsApp.swift in Sources */,
