@@ -1,6 +1,12 @@
 import SwiftUI
 
-class ImageManager {
+protocol ImageManagerProtocol {
+    func loadImage(forID imageID: String, completion: @escaping (UIImage?) -> Void)
+    func set(_ image: UIImage, forKey key: String)
+    func get(forKey key: String) -> UIImage?
+}
+
+class ImageManager: ImageManagerProtocol {
     static let shared = ImageManager()
 
     private let cache = NSCache<NSString, UIImage>()

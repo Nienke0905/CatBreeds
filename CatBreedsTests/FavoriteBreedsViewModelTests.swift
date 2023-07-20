@@ -3,6 +3,7 @@ import XCTest
 
 final class FavoriteBreedsViewModelTests: XCTestCase {
     private var favoritesManagerMock: FavoritesManagerMock!
+    private var imageManagerMock: ImageManagerMock!
     private var viewModel: FavoriteBreedsViewModel!
 
     private let catty = CatBreed(
@@ -16,12 +17,14 @@ final class FavoriteBreedsViewModelTests: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
         favoritesManagerMock = FavoritesManagerMock()
-        viewModel = FavoriteBreedsViewModel(favoritesManager: favoritesManagerMock)
+        imageManagerMock = ImageManagerMock()
+        viewModel = FavoriteBreedsViewModel(favoritesManager: favoritesManagerMock, imageManager: imageManagerMock)
     }
 
     override func tearDownWithError() throws {
         viewModel = nil
         favoritesManagerMock = nil
+        imageManagerMock = nil
         try super.tearDownWithError()
     }
 
@@ -37,5 +40,19 @@ final class FavoriteBreedsViewModelTests: XCTestCase {
         viewModel.removeFavorite(forBreed: catty)
         let favorites = viewModel.catBreeds
         XCTAssertEqual(favorites, [], "Favorites should match the breeds saved after removal.")
+    }
+
+    func testLoadImage() throws {
+        imageManagerMock.shouldSucceed = true
+        viewModel.loadImage(for: catty.referenceImageID!)
+        let image = viewModel.images[catty.referenceImageID!]
+        XCTAssertEqual(image, UIImage(named: "cat"))
+    }
+
+    func testLoadImageWithNoResult() throws {
+        imageManagerMock.shouldSucceed = false
+        viewModel.loadImage(for: catty.referenceImageID!)
+        let image = viewModel.images[catty.referenceImageID!]
+        XCTAssertNil(image)
     }
 }

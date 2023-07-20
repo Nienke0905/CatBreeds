@@ -7,13 +7,13 @@ class CatBreedDetailsViewModel: ObservableObject {
     @Published var isFavorited: Bool = false
 
     private let favoritesManager: FavoritesManager
-    private let imageManager: ImageManager
+    private let imageManager: ImageManagerProtocol
 
 
     init(
         breed: CatBreed,
         favoritesManager: FavoritesManager = .shared,
-        imageManager: ImageManager = .shared
+        imageManager: ImageManagerProtocol = ImageManager.shared
     ) {
         self.breed = breed
         self.favoritesManager = favoritesManager

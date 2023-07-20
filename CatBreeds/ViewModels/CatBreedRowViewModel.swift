@@ -5,11 +5,11 @@ class CatBreedRowViewModel: ObservableObject {
     @Published var breed: CatBreed
     @Published var image: UIImage?
 
-    private let imageManager: ImageManager
+    private let imageManager: ImageManagerProtocol
 
     init(
         breed: CatBreed,
-        imageManager: ImageManager = .shared
+        imageManager: ImageManagerProtocol = ImageManager.shared
     ) {
         self.breed = breed
         self.imageManager = imageManager

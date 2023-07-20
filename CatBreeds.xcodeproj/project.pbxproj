@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1935C9B2A6956B900CDCCCF /* FavoritesManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1935C9A2A6956B900CDCCCF /* FavoritesManagerMock.swift */; };
+		A1935C9D2A69581300CDCCCF /* FavoriteBreedsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1935C9C2A69581300CDCCCF /* FavoriteBreedsViewModelTests.swift */; };
+		A1935C9F2A695B2300CDCCCF /* ImageManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1935C9E2A695B2300CDCCCF /* ImageManagerMock.swift */; };
 		A1BF48C82A68288800270DC9 /* CatBreedsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48C72A68288800270DC9 /* CatBreedsApp.swift */; };
 		A1BF48CA2A68288800270DC9 /* CatBreedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF48C92A68288800270DC9 /* CatBreedsListView.swift */; };
 		A1BF48CC2A68288A00270DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BF48CB2A68288A00270DC9 /* Assets.xcassets */; };
@@ -34,23 +37,18 @@
 			remoteGlobalIDString = A1BF48C32A68288800270DC9;
 			remoteInfo = CatBreeds;
 		};
-		A1BF48DF2A68288A00270DC9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1BF48BC2A68288800270DC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1BF48C32A68288800270DC9;
-			remoteInfo = CatBreeds;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1935C9A2A6956B900CDCCCF /* FavoritesManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManagerMock.swift; sourceTree = "<group>"; };
+		A1935C9C2A69581300CDCCCF /* FavoriteBreedsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBreedsViewModelTests.swift; sourceTree = "<group>"; };
+		A1935C9E2A695B2300CDCCCF /* ImageManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerMock.swift; sourceTree = "<group>"; };
 		A1BF48C42A68288800270DC9 /* CatBreeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBreeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BF48C72A68288800270DC9 /* CatBreedsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsApp.swift; sourceTree = "<group>"; };
 		A1BF48C92A68288800270DC9 /* CatBreedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsListView.swift; sourceTree = "<group>"; };
 		A1BF48CB2A68288A00270DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1BF48CE2A68288A00270DC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1BF48D42A68288A00270DC9 /* CatBreedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatBreedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1BF48DE2A68288A00270DC9 /* CatBreedsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatBreedsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BF48F42A682A1F00270DC9 /* CatBreedsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsListViewModel.swift; sourceTree = "<group>"; };
 		A1BF48F62A682A7000270DC9 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
 		A1BF48F92A682C7B00270DC9 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
@@ -129,6 +127,9 @@
 			children = (
 				A1BF490B2A68529A00270DC9 /* FavoritesManagerTests.swift */,
 				A1BF490D2A6852DA00270DC9 /* UserDefaultsMock.swift */,
+				A1935C9A2A6956B900CDCCCF /* FavoritesManagerMock.swift */,
+				A1935C9C2A69581300CDCCCF /* FavoriteBreedsViewModelTests.swift */,
+				A1935C9E2A695B2300CDCCCF /* ImageManagerMock.swift */,
 			);
 			path = CatBreedsTests;
 			sourceTree = "<group>";
@@ -294,7 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BF490C2A68529A00270DC9 /* FavoritesManagerTests.swift in Sources */,
+				A1935C9D2A69581300CDCCCF /* FavoriteBreedsViewModelTests.swift in Sources */,
+				A1935C9F2A695B2300CDCCCF /* ImageManagerMock.swift in Sources */,
 				A1BF490E2A6852DA00270DC9 /* UserDefaultsMock.swift in Sources */,
+				A1935C9B2A6956B900CDCCCF /* FavoritesManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

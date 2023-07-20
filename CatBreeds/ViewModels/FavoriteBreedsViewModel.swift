@@ -5,12 +5,12 @@ class FavoriteBreedsViewModel: ObservableObject {
     @Published var catBreeds: [CatBreed] = []
     @Published var images: [String:UIImage] = [:]
     private let favoritesManager: FavoritesManagerProtocol
-    private let imageManager: ImageManager
+    private let imageManager: ImageManagerProtocol
 
 
     init(
         favoritesManager: FavoritesManagerProtocol = FavoritesManager.shared,
-        imageManager: ImageManager = .shared
+        imageManager: ImageManagerProtocol = ImageManager.shared
     ) {
         self.favoritesManager = favoritesManager
         self.imageManager = imageManager
