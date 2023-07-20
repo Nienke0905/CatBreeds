@@ -15,7 +15,7 @@ class ImageManager {
         return cache.object(forKey: key as NSString)
     }
 
-    private static func imageURL(for imageID: String) -> URL? {
+    private func imageURL(for imageID: String) -> URL? {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "cdn2.thecatapi.com"
@@ -23,7 +23,7 @@ class ImageManager {
         return components.url
     }
 
-    static func loadImage(forID imageID: String, completion: @escaping (UIImage?) -> Void) {
+    func loadImage(forID imageID: String, completion: @escaping (UIImage?) -> Void) {
         if let cachedImage = ImageManager.shared.get(forKey: imageID) {
             completion(cachedImage)
             return

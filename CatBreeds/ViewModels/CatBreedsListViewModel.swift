@@ -3,10 +3,10 @@ import SwiftUI
 class CatBreedsListViewModel: ObservableObject {
     @Published var catBreeds: [CatBreed] = []
     @Published var images: [String:UIImage] = [:]
-    private let apiKey = "live_43f7SULSRO8PjBZ587Gvmj3jgW3HNVyY1bxlcbtSETJKvTW41UXzSiod8FZTHwax"
+    private let apiKey = "ENTER YOUR API KEY"
 
     func fetchCatBreeds() {
-        guard let breedsURL = URL(string: "https://api.thecatapi.com/v1/breeds/?page=1&limit=25") else {
+        guard let breedsURL = URL(string: "https://api.thecatapi.com/v1/breeds/?page=1&limit=20") else {
             return
         }
 

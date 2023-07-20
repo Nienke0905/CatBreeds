@@ -4,6 +4,8 @@ class FavoritesManager {
     private let userDefaultsKey = "FavoriteItems"
     private let userDefaults: UserDefaults
 
+    static let shared = FavoritesManager()
+
     init(userDefaults: UserDefaults = UserDefaults.standard) {
         self.userDefaults = userDefaults
     }

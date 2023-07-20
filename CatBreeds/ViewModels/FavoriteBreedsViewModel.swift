@@ -4,10 +4,16 @@ import SwiftUI
 class FavoriteBreedsViewModel: ObservableObject {
     @Published var catBreeds: [CatBreed] = []
     @Published var images: [String:UIImage] = [:]
-    private let apiKey = "live_43f7SULSRO8PjBZ587Gvmj3jgW3HNVyY1bxlcbtSETJKvTW41UXzSiod8FZTHwax"
-    private let favoritesManager = FavoritesManager()
+    private let favoritesManager: FavoritesManager
+    private let imageManager: ImageManager
 
-    init() {
+
+    init(
+        favoritesManager: FavoritesManager = .shared,
+        imageManager: ImageManager = .shared
+    ) {
+        self.favoritesManager = favoritesManager
+        self.imageManager = imageManager
         self.catBreeds = favoritesManager.getFavorites()
     }
 
@@ -16,7 +22,7 @@ class FavoriteBreedsViewModel: ObservableObject {
     }
 
     func loadImage(for imageID: String) {
-        ImageManager.loadImage(forID: imageID) { [weak self] image in
+        imageManager.loadImage(forID: imageID) { [weak self] image in
             self?.images[imageID] = image
         }
     }

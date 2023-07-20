@@ -7,10 +7,17 @@ class CatBreedDetailsViewModel: ObservableObject {
     @Published var isFavorited: Bool = false
 
     private let favoritesManager: FavoritesManager
+    private let imageManager: ImageManager
 
-    init(breed: CatBreed) {
+
+    init(
+        breed: CatBreed,
+        favoritesManager: FavoritesManager = .shared,
+        imageManager: ImageManager = .shared
+    ) {
         self.breed = breed
-        self.favoritesManager = FavoritesManager()
+        self.favoritesManager = favoritesManager
+        self.imageManager = imageManager
         self.isFavorited = favoritesManager.getFavorites().contains(where: { $0.id == breed.id })
         loadImage()
     }
@@ -21,7 +28,7 @@ class CatBreedDetailsViewModel: ObservableObject {
 
     private func loadImage() {
         guard let imageID = breed.referenceImageID else { return }
-        ImageManager.loadImage(forID: imageID) { [weak self] image in
+        imageManager.loadImage(forID: imageID) { [weak self] image in
             self?.image = image
         }
     }
