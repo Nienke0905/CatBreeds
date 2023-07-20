@@ -4,12 +4,12 @@ import SwiftUI
 class FavoriteBreedsViewModel: ObservableObject {
     @Published var catBreeds: [CatBreed] = []
     @Published var images: [String:UIImage] = [:]
-    private let favoritesManager: FavoritesManager
+    private let favoritesManager: FavoritesManagerProtocol
     private let imageManager: ImageManager
 
 
     init(
-        favoritesManager: FavoritesManager = .shared,
+        favoritesManager: FavoritesManagerProtocol = FavoritesManager.shared,
         imageManager: ImageManager = .shared
     ) {
         self.favoritesManager = favoritesManager

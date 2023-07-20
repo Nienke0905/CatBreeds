@@ -1,6 +1,12 @@
 import Foundation
 
-class FavoritesManager {
+protocol FavoritesManagerProtocol {
+    func getFavorites() -> [CatBreed]
+    func addFavorite(_ breed: CatBreed)
+    func removeFavorite(_ breed: CatBreed)
+}
+
+class FavoritesManager: FavoritesManagerProtocol {
     private let userDefaultsKey = "FavoriteItems"
     private let userDefaults: UserDefaults
 
