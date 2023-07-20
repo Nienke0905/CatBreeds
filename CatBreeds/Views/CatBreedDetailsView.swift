@@ -6,16 +6,19 @@ struct CatBreedDetailsView: View {
     var body: some View {
         GeometryReader { geo in
             ScrollView {
-                if let image = viewModel.image {
-                    Image(uiImage: image)
-                        .myImageModifier()
-                        .frame(height: geo.size.height/2)
+                ZStack {
+                    Color.teal.ignoresSafeArea()
+                    if let image = viewModel.image {
+                        Image(uiImage: image)
+                            .myImageModifier()
 
-                } else {
-                    Image("cat")
-                        .myImageModifier()
-                        .frame(height: geo.size.height/2)
+                    } else {
+                        Image("cat")
+                            .myImageModifier()
+                    }
                 }
+                .frame(height: geo.size.height/2)
+
 
                 VStack(alignment: .center) {
                     Text(viewModel.breed.name)
@@ -53,8 +56,8 @@ private extension Image {
             .resizable()
             .scaledToFit()
             .cornerRadius(10)
-            .padding(.horizontal, 20)
-            .foregroundColor(.gray)
+            .padding(20)
+            .foregroundColor(Color(uiColor: .darkGray))
    }
 }
 
